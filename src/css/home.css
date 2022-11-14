@@ -1,0 +1,78 @@
+.state-map .state path {
+  pointer-events: all;
+  cursor: pointer;
+  transition: opacity 300ms ease;
+}
+
+.state text:hover + path {
+  opacity: 0.5;
+}
+
+.state-map .state > g {
+  cursor: pointer;
+}
+.state path {
+  cursor: pointer;
+}
+
+.state text {
+  font-size: 0.6rem;
+  cursor: pointer;
+  stroke: rgb(50 50 50);
+  stroke-width: 1;
+  font-weight: 200;
+}
+
+.state-map .state > g:hover path {
+  opacity: 0.55;
+}
+
+.state-result {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.state-result-card {
+  padding: 1rem;
+  border: 1px solid var(--divider-color);
+  background-color: var(--white);
+}
+
+.state-result-card .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+}
+
+.state-result-card .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  width: fit-content;
+}
+
+.state-result-card .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.state-result-card .results-single-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  font-size: 0.85rem;
+  color: var(--dark-grey-text);
+}
+
+.state-result-card .results-single-row:not(:last-child) {
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.election-links-wrapper {
+  border: 1px solid var(--divider-color);
+  border-top: none;
+  background-color: var(--white);
+}
